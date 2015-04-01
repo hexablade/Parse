@@ -1,8 +1,12 @@
 #ifndef TOKEN_H_
 #define TOKEN_H_
+
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 #define STRING_LENGTH 512
+
 //Token stack structure
 typedef struct Tokenizing 
 {
@@ -13,6 +17,8 @@ typedef struct Tokenizing
     int row;
 
 }Token;
+
+int read_line(char **line);
 
 
 // Initializes the token stack structures
@@ -27,7 +33,7 @@ Token init_token(){
    return t;
 }
 
-void tokenizer(ch);
+void tokenizer(char *line);
 
 #endif
 
