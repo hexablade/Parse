@@ -27,5 +27,7 @@ Token init_token(){
    return t;
 }
 
+void tokenizer(ch);
+
 #endif
 
